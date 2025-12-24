@@ -64,30 +64,50 @@
             font-size: 0.9em;
             color: #444;
         }
+
+        /* ===================== */
+        /* PHOTO À GAUCHE */
+        /* ===================== */
+        .profile-container {
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
 
-<h1>Dr. Wejdene Nasr Ben Hadj Amor </h1>
+<h1>Dr. Wejdene Nasr Ben Hadj Amor</h1>
 <p class="subtitle">Docteure / Chercheuse en Mathématiques</p>
 
-<!-- Photo d'identité -->
-<div style="text-align: center; margin-bottom: 30px;">
-    <img src="photo d'identite.png" alt="Photo d'identité" width="150" height="200" style="border:1px solid #000; border-radius:5px;">
+<!-- PHOTO D'IDENTITÉ À GAUCHE -->
+<div class="profile-container">
+    <img src="photo d'identite.png" alt="Photo d'identité" class="profile-photo">
 </div>
 
-    
 <h2>À propos</h2>
 <p>
 Docteure en mathématiques. Mes travaux de recherche portent sur les applications des statistiques et des probabilités en analyse multifractale.
-
-Actuellement chercheuse associée au Laboratoire d’Analyse Multifractale et Applications (LAMA) de l’Université Paris-Est Créteil (UPEC), ainsi qu’au Laboratoire de Mathématiques – Modélisation Déterministe et Aléatoire (LAMMDA) de l’École Supérieure des Sciences et Technologies de Hammam Sousse (ESSTHS).
+<br><br>
+Actuellement chercheuse associée au Laboratoire d’Analyse Multifractale et Applications (LAMA) de l’Université Paris-Est Créteil (UPEC),
+ainsi qu’au Laboratoire de Mathématiques – Modélisation Déterministe et Aléatoire (LAMMDA) de l’École Supérieure des Sciences et Technologies
+de Hammam Sousse (ESSTHS).
 </p>
+
+<!-- NETTOYAGE DU FLOAT -->
+<div style="clear: both;"></div>
 
 <h2>Thèmes de recherche</h2>
 <ul>
-    <li>Analyse multifracatle</li>
+    <li>Analyse multifractale</li>
     <li>Statistiques</li>
     <li>Probabilités</li>
     <li>Analyse de données</li>
@@ -98,72 +118,26 @@ Actuellement chercheuse associée au Laboratoire d’Analyse Multifractale et Ap
 <h3 style="color:#1E90FF; text-decoration:underline;">Publications dans des revues scientifiques</h3>
 <ol>
   <li>
-    <strong>Statistics and Computing, 2025 </strong><br>
-    <span style="color:#000080; font-weight:bold;">Ben Nasr, W.</span>, Halconruy, H. and Jaffard, S.: Questioning normality: A study of wavelet leaders distribution. Stat Comput 36, 28 (2026). 
+    <strong>Statistics and Computing, 2025</strong><br>
+    <span style="color:#000080; font-weight:bold;">Ben Nasr, W.</span>, Halconruy, H. and Jaffard, S. :
+    Questioning normality: A study of wavelet leaders distribution.
+    <em>Statistics and Computing</em>, 36, 28 (2026).
     <a href="https://doi.org/10.1007/s11222-025-10767-8" target="_blank">Lien DOI</a>
   </li>
 </ol>
 
-<h3 style="color:#1E90FF; text-decoration:underline;">Chapitres d’ouvrages collectifs</h3>
-<ol start="2">
-  <li>
-    <strong>Recent Developments in Fractals and Related Fields, Birkhäuser / Springer, Cham, 2025 </strong><br>
-    <span style="color:#000080; font-weight:bold;">W. Ben Nasr</span>, V. Billat, S. Jaffard, F. Palacin et G. Saës, "The weak scaling multifractal spectrum: Mathematical setting and applications to marathon runners physiological data". In: <em>Recent Developments in Fractals and Related Fields, Fractals and Related Fields IV (FARF IV), Trends in Mathematics, J. Barral, A. Batakis, and S. Seuret, Eds., Birkhäuser / Springer, Cham, 2025, pp. 105–153</em>. 
-    <a href="https://doi.org/10.1007/978-3-031-80453-3_5" target="_blank">Lien DOI</a>
-  </li>
-
-  <li>
-    <strong>Analysis, Applications, and Computations: ISAAC 2021, Birkhäuser / Springer, Cham, 2023 </strong><br>
-    S. Jaffard, G. Saës, <span style="color:#000080; font-weight:bold;">W. Ben Nasr</span>, F. Palacin et V. Billat, "A review of univariate and multivariate multifractal analysis illustrated by the analysis of marathon runners physiological data", In: <em>Analysis, Applications, and Computations: ISAAC 2021, U. Kähler, M. Reissig, I. Sabadini & J. Vindas, Eds., Cham : Birkhäuser / Springer, 2023, pp. 3–60</em>. 
-    <a href="https://doi.org/10.1007/978-3-031-36375-7_1" target="_blank">Lien DOI</a>
-  </li>
-</ol>
-
-<h3 style="color:#1E90FF; text-decoration:underline;">Publications dans des conférences</h3>
-<ol start="4">
-  <li>
-    <strong>GRETSI 2025 - XXXe Symposium Signal and Image Processing, Strasbourg, France, Août 2025</strong><br>
-    H. Wendt, P. Abry, P. Ciuciu, M. Dumeur, S. Jaffard, <span style="color:#000080; font-weight:bold;">Ben Nasr, W.</span> et G. Saës. Analyse multifractale construite sur les weak scaling exponents. 
-    <a href="https://hal.archives-ouvertes.fr/hal-05354914" target="_blank">Lien HAL</a>
-  </li>
-
-  <li>
-    <strong>GRETSI 2022 – XXVIIIe Colloque Francophone de Traitement du Signal et des Images, Nancy, France</strong><br>
-    Guillaume Saës, <span style="color:#000080; font-weight:bold;">W. Ben Nasr</span>, Stéphane Jaffard, Florent Palacin, Véronique Billat. Analyse Multifractale des données physiologiques de marathoniens. 
-    <a href="https://hal.archives-ouvertes.fr/hal-03694475v2" target="_blank">Lien HAL</a>
-  </li>
-</ol>
-
-<h3 style="color:#1E90FF; text-decoration:underline;">Articles soumis et en cours d’évaluation</h3>
-<ol start="6">
-  <li>
-    <strong>Fractal and Fractional 2025 </strong><br>
-    <span style="color:#000080; font-weight:bold;">W. Ben Nasr</span>, V. Billat, S. Jaffard, F. Palacin et G. Saes, "Multifractal analysis of marathon pacing – physiological background and practical implications", preprint submitted to Fractal and Fractional Journal, 2025. 
-    <a href="https://doi.org/10.20944/preprints202512.1536.v1" target="_blank">Lien DOI</a>
-  </li>
-</ol>
-
-    <ol start="7">
-  <li>
-    <span style="color:#000080; font-weight:bold;">W. Ben Nasr</span>, H. Halconruy et S. Jaffard, "Multifractal analysis of random wavelet series with generalized Gaussian mixture statistics", soumis au journal Stochastic Processes and their Applications. 
-      <a href="Multifractal analysis of random wavelet series with generalizedGaussian mixture statistics.pdf" target="_blank">Lien preprint</a>
-  </li>
-  </ol>
-
-
-
- <h2>Curriculum Vitae</h2>
+<h2>Curriculum Vitae</h2>
 <p>
-Vous pouvez consulter ou télécharger mon CV au format PDF :
 <a href="CV_Wejdene.pdf" target="_blank">Télécharger mon CV</a>
 </p>
 
-
 <h2>Contact</h2>
 <p>
-Email : <a href="wejdene.nasr-ben-hadj-amor@u-pec.fr">wejdene.nasr-ben-hadj-amor@u-pec.fr</a><br>
-🌐 Google Scholar : <a href="https://scholar.google.com/citations?user=tZ1wW7gAAAAJ&hl=fr" target="_blank">Mon profil Google Scholar</a><br>
-🔗 ResearchGate : <a href="https://www.researchgate.net/profile/Wejdene-Nasr-Ben-Hadj-Amor-2?ev=hdr_xprf" target="_blank">Mon profil ResearchGate</a>
+Email :
+<a href="mailto:wejdene.nasr-ben-hadj-amor@u-pec.fr">
+wejdene.nasr-ben-hadj-amor@u-pec.fr</a><br>
+🌐 <a href="https://scholar.google.com/citations?user=tZ1wW7gAAAAJ&hl=fr" target="_blank">Google Scholar</a><br>
+🔗 <a href="https://www.researchgate.net/profile/Wejdene-Nasr-Ben-Hadj-Amor-2" target="_blank">ResearchGate</a>
 </p>
 
 <footer>
