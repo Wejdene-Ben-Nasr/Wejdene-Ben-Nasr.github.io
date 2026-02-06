@@ -19,19 +19,36 @@
             line-height: 1.8;
         }
 
+        /* ===== HEADER AVEC PHOTO ===== */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #000;
+            margin-right: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+            text-align: center;
+        }
+
         h1 {
             font-size: 2.2em;
-            text-align: center;
             margin-bottom: 0;
         }
 
         .subtitle {
-            text-align: center;
             font-style: italic;
             margin-top: 5px;
-            margin-bottom: 40px;
         }
 
+        /* ===== TITRES ===== */
         h2 {
             font-size: 1.4em;
             margin-top: 40px;
@@ -46,6 +63,7 @@
             text-decoration: underline;
         }
 
+        /* ===== LISTES ===== */
         ol {
             padding-left: 25px;
         }
@@ -54,6 +72,11 @@
             margin-bottom: 18px;
         }
 
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* ===== LIENS ===== */
         a {
             color: #000;
             text-decoration: none;
@@ -64,6 +87,14 @@
             background-color: #f0f0f0;
         }
 
+        /* ===== AUTEUR ===== */
+        .author {
+            color: #000080;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             margin-top: 60px;
@@ -71,18 +102,31 @@
             color: #444;
         }
 
-        .author {
-            color: #000080;
-            font-weight: bold;
-            text-decoration: underline;
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                margin: 0 0 20px 0;
+                width: 130px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<h1>Dr. Wejdene Nasr Ben Hadj Amor</h1>
-<p class="subtitle">Docteure / Chercheuse en Mathématiques</p>
+<!-- ===== EN-TÊTE ===== -->
+<div class="header">
+    <img src="photo_identite.png" alt="Photo d'identité">
+    <div class="header-text">
+        <h1>Dr. Wejdene Nasr Ben Hadj Amor</h1>
+        <p class="subtitle">Docteure / Chercheuse en Mathématiques</p>
+    </div>
+</div>
 
 <h2>À propos</h2>
 <p>
@@ -169,7 +213,6 @@ et au Laboratoire de Mathématiques – Modélisation Déterministe et Aléatoir
     <li>
         <span class="author">W. Ben Nasr</span>, H. Halconruy and S. Jaffard<br>
         <em>Multifractal analysis of random wavelet series with generalized Gaussian mixture statistics.</em><br>
-        Soumis 
         <a href="Multifractal analysis of random wavelet series with generalizedGaussian mixture statistics.pdf" target="_blank">Lien preprint</a>
     </li>
 </ol>
